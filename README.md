@@ -88,3 +88,28 @@ Deploy your project and confirm that:
 * Clean, well-organized, and commented code
 * Successful live deployment with a working link
 * Evidence of following best practices
+
+
+
+
+
+MY readme.md
+# Final Web Development Project  
+
+This is my final project for Web Development.  
+
+## 🌐 Live Deployment
+👉 [View Project](https://68d04791e58c85f2169aa2ff--stirring-semolina-a5649b.netlify.app/)  
+
+## 📂 Project Structure
+- `index.html` → Main entry point  
+- `style.css` → Styling  
+- `script.js` → JavaScript functionality  
+
+## ⚡ How to Run Locally
+```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+open index.html
+
+https://68d04791e58c85f2169aa2ff--stirring-semolina-a5649b.netlify.app/
