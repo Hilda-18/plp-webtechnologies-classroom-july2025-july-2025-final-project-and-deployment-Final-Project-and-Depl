@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hilda Waringa | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #e6f0ff);
+      color: #333;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ff4da6;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #ff4da6;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      padding-top: 80px; /* to avoid overlap with navbar */
+      text-align: center;
+    }
+    .hero-img img {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      animation: float 4s ease-in-out infinite;
+    }
+    .hero-text {
+      margin-top: 20px;
+      animation: fadeUp 1.5s ease-in-out;
+    }
+    .hero-text h1 {
+      font-size: 36px;
+      color: #333;
+    }
+    .hero-text span {
+      color: #ff4da6;
+    }
+    .hero-text p {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Animations */
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      margin: 20px 10px 0;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      color: #fff;
+      background: #ff4da6;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #e60073;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🌸 Tech Girlie 🌸</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-img">
+      <!-- place your image in /images/ folder and update src -->
+      <img src="My HTML hackathon-20250919T190247Z-1-001\My HTML hackathon\WhatsApp Image 2025-09-20 at 11.01.01_446a4879.jpg" alt="Hilda Waringa">
+    </div>
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Hilda Waringa</span></h1>
+      <p>🎓 Student at University of Nairobi</p>
+      <p>💻 Aspiring Software Engineer | 🌸 Gender Activist</p>
+      <p>📚 PLP Learner | Math Enthusiast</p>
+      <a href="about.html" class="btn">More About Me</a>
+      <a href="cv/Hilda_Waringa_CV.pdf" download class="btn">Download CV</a>
+    </div>
+  </section>
+</body>
+</html>
